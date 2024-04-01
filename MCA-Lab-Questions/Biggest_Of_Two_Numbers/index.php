@@ -40,7 +40,7 @@ if ($_POST) {
     // Ternary Operation 
 
     $main = ($number1 > $number2) ? $number1 : $number2;
-  print ("The Biggest Number is :".$main);
+    echo "<center>The Biggest Number is :".$main."</center>";
 }
 
 
