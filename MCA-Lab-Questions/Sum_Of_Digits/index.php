@@ -32,6 +32,4 @@ if ($_POST) {
 
     echo "<br><br><center>Sum of Number ".$copy." is : ".$sum."</center>";
 }
-
-
 ?>

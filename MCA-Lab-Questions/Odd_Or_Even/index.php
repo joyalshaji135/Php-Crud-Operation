@@ -33,5 +33,4 @@ if ($_POST) {
         echo "<center>".$number." is Odd Number</center>";
     }
 }
-
 ?>

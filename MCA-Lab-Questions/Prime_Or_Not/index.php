@@ -47,5 +47,4 @@ else
     echo $number." is Not Prime Number";
 }
 }
-
 ?>

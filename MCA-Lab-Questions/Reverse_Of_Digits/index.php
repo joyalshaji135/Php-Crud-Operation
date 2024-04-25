@@ -35,5 +35,4 @@ if ($_POST) {
     echo "<br><br><center>Reverse of Number of ".$num1." is : ".$revnum."</center>";
 }
 
-
 ?>
