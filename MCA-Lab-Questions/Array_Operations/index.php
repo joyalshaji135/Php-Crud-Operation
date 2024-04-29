@@ -41,12 +41,48 @@
     // Sorting of An Array 
 
     for ($i=0; $i < 5; $i++) { 
-        for ($j=i+1; $j < 5; $j++) { 
-            if ($array1[$i] < $array[$j]) {
-                $temp = 
+        for ($j=$i+1; $j < 5; $j++) { 
+            if ($array1[$i] < $array1[$j]) {
+                $temp = $array1[$i];
+                $array1[$i] = $array1[$j];
+                $array1[$j] = $temp;
             }
         }
     }
+    
+    echo "<br><br>First Array Elements Sorted: <br><br>";
+    for ($i=0; $i < 5; $i++) { 
+        echo "Array 1 [".$i."] = ".$array1[$i]."<br>";
+    }
+
+    // Sum Of an Array 
+    $sum = 0;
+    for ($i=0; $i < 5; $i++) { 
+        $sum = $sum + $array1[$i];
+    }
+
+    echo "<br><br>Sum of Array Element :".$sum."<br><br>";
+
+    // Sorting of an Array in Acsending Order
+
+    for ($i=0; $i < 5; $i++) { 
+        for ($j=$i+1; $j < 5; $j++) { 
+            if ($array1[$i] > $array1[$j]) {
+                $temp = $array1[$i];
+                $array1[$i] = $array1[$j];
+                $array1[$j] = $temp;
+            }
+        }
+    }
+
+    echo "<br><br>First Array Elements Sorted: <br><br>";
+    for ($i=0; $i < 5; $i++) { 
+        echo "Array 1 [".$i."] = ".$array1[$i]."<br>";
+    }
+
+    // Merging Two Arrays
+    
+   print_r(array_merge($array1,$array2));
 }
 
 ?>
