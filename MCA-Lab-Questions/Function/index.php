@@ -34,7 +34,7 @@ if ($_POST) {
 
     // Calling on Function
     
-    echo "Addition off Two Numbers :".additions($number1,$number2)."<br>";
+    echo "Addition of Two Numbers :".additions($number1,$number2)."<br>";
     multiplication($number1,$number2);
     $division = division();
     echo "Division of Two Number is :".$division."<br>";
