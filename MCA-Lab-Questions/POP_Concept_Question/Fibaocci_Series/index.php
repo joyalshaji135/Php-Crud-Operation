@@ -24,12 +24,13 @@
 <?php
 if ($_POST) {
     $number = $_POST['number'];
+    $real = $number;
     $number = $number-2;
     $num = 0;  
     $n1 = 0;  
     $n2 = 1;  
     echo "<center>";
-    echo "<h3>Fibonacci series for first ".$number." numbers: </h3>";  
+    echo "<h3>Fibonacci series for first ".$real." numbers: </h3>";  
     echo "\n";  
     echo $n1.' '.$n2.' ';  
     while ($num < $number )  

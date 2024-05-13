@@ -8,7 +8,7 @@
 <body>
     <center>
 
-        <h1>Sum of Two Number With Argument</h1>
+        <h1>Multiplication of Two Number With Argument</h1>
         <form action="index.php" method="post">
             <p>
                 <label for="number1">Enter the First Number :</label>
@@ -37,7 +37,7 @@ if ($_POST) {
 
 function Sum($num1,$num2)
 {
-    $sum = $num1+$num2;
-    echo "<center> Sum of Two Number is :".$sum."</center>";
+    $sum = $num1*$num2;
+    echo "<center> Multiplication of Two Number is :".$sum."</center>";
 }
 ?>

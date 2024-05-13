@@ -7,6 +7,9 @@
 </head>
 <body>
     <center>
+        <h1>
+            Odd Or Even
+        </h1>
         <form action="index.php" method="post">
             <p>
                 <label for="number">Enter the Number</label>

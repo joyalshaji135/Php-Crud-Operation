@@ -33,6 +33,7 @@ if ($_POST) {
             $flag = 0;
         }
     }
+    echo "<center>";
     if($flag == 1)
     {
         echo $number." is Prime Number";
@@ -46,5 +47,8 @@ else
 {
     echo $number." is Not Prime Number";
 }
+
+echo "</center>";
 }
+
 ?>
