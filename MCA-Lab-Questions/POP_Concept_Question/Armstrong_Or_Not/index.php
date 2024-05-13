@@ -35,7 +35,7 @@ if ($_POST) {
     $total=$total+$rem*$rem*$rem;  
     $x=$x/10;  
     }  
-
+    echo "<center>";
     if($number==$total)  
     {  
     echo "Yes it is an Armstrong number";  
@@ -44,6 +44,7 @@ if ($_POST) {
     {  
     echo "No it is not an armstrong number";  
     }  
+    echo "</center>";
 }
 
 ?>
