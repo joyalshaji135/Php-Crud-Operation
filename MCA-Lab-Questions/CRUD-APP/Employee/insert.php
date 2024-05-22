@@ -1,6 +1,6 @@
 <?php
 
-include('./config.php');
+include('./Database/config.php');
 
 ?>
 
@@ -76,8 +76,8 @@ if (isset($_POST['submit'])) {
     $run_query=mysqli_query($connection,$insert_query);
     if($run_query)
     {
-        echo "<script>alert('Inserted Successfully');</script>";    
-        header('location:index.php');
+        echo "<script>alert('Inserted Successfully')</script>";
+        echo "<script>window.open('index.php','_self')</script>";
     }
     else
     {
