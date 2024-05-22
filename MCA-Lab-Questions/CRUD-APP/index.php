@@ -35,6 +35,7 @@ include('./config.php');
     </tr>";
         if ($employee_data) {
             while ($employee_query = mysqli_fetch_assoc($employee_data)) {
+                $emp_id = $employee_query['emp_id'];
                 $emp_name = $employee_query['emp_name'];
                 $emp_age = $employee_query['emp_age'];
                 $emp_address = $employee_query['emp_address'];
@@ -47,8 +48,8 @@ include('./config.php');
             <td>$emp_address</td>
             <td>$emp_salary</td>
             <td>$emp_status</td>
-            <td><a href=''><input type='submit' value='Update'></a></td>
-            <td><a href=''><input type='submit' value='Delete'></a></td>
+            <td><a href='./update.php?update_id=$emp_id'><input type='submit' value='Update'></a></td>
+            <td><a href='./delete.php?delete_id=$emp_id'><input type='submit' value='Delete'></a></td>
         </tr>";
             }
         }
