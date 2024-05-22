@@ -77,9 +77,19 @@ while ($update_value = mysqli_fetch_assoc($update_select_query)) {
                 <td>
                     <select name="emp_status" id="" >
                         <?php
+                            if ($emp_status == 'true') 
+                            {
+                                echo "<option value='$emp_status'>$emp_status</option>";
+                                echo "<option value='false'>false</option>";
+                            }
+                            else
+                            {
+                                echo "<option value='true'>true</option>";
+                                echo "<option value='$emp_status'>$emp_status</option>";
+                            }
                         ?>
-                       <option value="true">True</option>
-                       <option value="false">False</option>
+                       
+                      
                     </select>
                 </td>
             </tr>
@@ -104,6 +114,15 @@ if (isset($_POST['update'])) {
     $emp_age = $_POST['emp_age'];
     $emp_address = $_POST['emp_address'];
     $emp_salary = $_POST['emp_salary'];
+    $emp_status = $_POST['emp_status'];
+
+    $update_query="update employee_details set emp_name='$emp_name',emp_age='$emp_age',emp_address='$emp_address',emp_salary='$emp_salary',emp_status='$emp_status' where emp_id=$update_id";
+    $u_query=mysqli_query($connection,$update_query);
+    if($u_query)
+    {
+        echo "<script>alert('Update Successfully');</script>";
+        header('location:index.php');
+    }
 }
 
 ?>
