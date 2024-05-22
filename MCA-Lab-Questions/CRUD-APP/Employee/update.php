@@ -121,8 +121,8 @@ if (isset($_POST['update'])) {
     $u_query=mysqli_query($connection,$update_query);
     if($u_query)
     {
-        echo "<script>alert('Update Successfully');</script>";
-        header('location:index.php');
+        echo "<script>alert('Updated Successfully')</script>";
+        echo "<script>window.open('index.php','_self')</script>";
     }
 }
 
