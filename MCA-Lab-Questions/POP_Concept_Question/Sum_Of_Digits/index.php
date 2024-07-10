@@ -24,12 +24,16 @@
 if ($_POST) {
     $number1 = $_POST['number1'];
     $copy = $number1;
-    $sum = 0;
+    $ret = SumFunction($number1);
+    echo "<br><br><center>Sum of Number ".$copy." is : ".$ret."</center>";
 
+}
+function SumFunction($number1){
+    $sum = 0;
     for ($i=$number1; $i != 0 ; $i = $i /10) { 
         $sum += $i % 10;
     }
 
-    echo "<br><br><center>Sum of Number ".$copy." is : ".$sum."</center>";
+    return $sum;
 }
 ?>
